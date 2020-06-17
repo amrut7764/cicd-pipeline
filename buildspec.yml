@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
       - echo "we are in the post build phase"
-  artifacts:
-    files:
-      - "**/*"
-    name: $AWS_REGION-$(date +%Y-%m-%d)
+artifacts:
+  files:
+    - "**/*"
+  name: $AWS_REGION-$(date +%Y-%m-%d)
